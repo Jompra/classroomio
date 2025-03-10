@@ -12,6 +12,7 @@
     "dashboard:build": "cd apps/dashboard && pnpm i && IS_SELFHOSTED=true DEPLOYMENT_PROVIDER=docker pnpm build",
     "dashboard:start": "cd apps/dashboard && node build"
   },
+  "workspaces": ["apps/*", "packages/*"],
   "license": "MIT",
   "packageManager": "pnpm@8.0.0",
   "dependencies": {
