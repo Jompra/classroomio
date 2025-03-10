@@ -1,7 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalEnv": ["IS_SELFHOSTED", "DEPLOYMENT_PROVIDER"],
-  "pipeline": {
+  "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**", ".svelte-kit/**", ".vercel/**"]
